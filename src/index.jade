@@ -2,13 +2,25 @@
 html(lang="en")
 	head
 		meta(charset="UTF-8")
-		title Neptuno Boilerplate
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title EADCRM
 		link(rel="stylesheet", href="./css/app.min.css")
+		link(rel="stylesheet", href="./css/materialize.min.css")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+
 	body
 		div.root
-			include components/Header/Header.jade
+			header
+				include components/Sidenav/index
+				include components/Navbar/index
 			main.main
-				include components/CreateNew/CreateNew.jade
-				include components/Folder/Folder.jade
+				
 			footer
-		script(src="./js/bundle.js", async)
+		<script src="./js/materialize.min.js"></script>
+		script.
+			document.addEventListener('DOMContentLoaded', function() {
+				var elems = document.querySelectorAll('.sidenav');
+				var instances = M.Sidenav.init(elems, function(){});
+			});
+			
+			

@@ -1,7 +1,7 @@
 {
-  "name": "neptuno-boilerplate",
+  "name": "eadoffice",
   "version": "1.0.0",
-  "description": "A CSS library to create UI components",
+  "description": "A custom relationship system",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",

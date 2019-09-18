@@ -1,0 +1,32 @@
+nav.white
+	div.nav-wrapper
+		
+		ul#nav-mobile0(class="left hide-on-med-and-down")
+			li
+				a(href="#" class="black-text") 
+					i.material-icons add_circle
+			li
+				a(href="#" class="black-text") 
+					i.material-icons history
+
+		div.row
+			include ../Search/index.jade
+			a(href="#" class="brand-logo center black-text") EADCRM
+
+			ul#nav-mobile(class="right hide-on-med-and-down")
+				li 
+					a(href="#!" class="black-text") HOME
+				li 
+					a(href="#!" class="black-text") PROFILE
+				li
+					a(href="#!" class="black-text") 
+						i.material-icons notifications
+				li 
+					a(href="#!" class="black-text")
+						i.material-icons settings
+				li
+					a(href="#!" class="black-text") 
+						i.material-icons help
+
+
+a(href="#" data-target="slide-out" class="sidenav-trigger") Menu
