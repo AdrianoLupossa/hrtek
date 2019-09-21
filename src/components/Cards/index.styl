@@ -1,0 +1,16 @@
+.card {
+
+	@media (min-width: 568.7px) {
+		width: 35rem;
+	}
+	
+	.btn {
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+		@media (max-width: 568px) {
+			width: 100%;
+			margin-bottom: .5rem;
+		}
+	}
+}

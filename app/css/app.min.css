@@ -1,3 +1,25 @@
+@media (min-width: 568.9px) {
+  main {
+    padding-left: 21rem;
+  }
+}
+main h2.header {
+  margin-left: 1rem;
+}
+@media (min-width: 568.7px) {
+  .card {
+    width: 35rem;
+  }
+}
+.card .btn:not(:last-child) {
+  margin-right: 1rem;
+}
+@media (max-width: 568px) {
+  .card .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
 @media (min-width: 575.6px) {
   nav {
     padding-left: 20rem;

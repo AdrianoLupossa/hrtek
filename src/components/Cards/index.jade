@@ -1,11 +1,32 @@
 div.row
-	div.col.s12.m7
-		h2.header Finanças
+	h2.header Finanças
+	div.col.s12.m6
 		div.card.horizontal
 			div.card-image
-				img(src="https://lorempixel.com/100/190/nature/6")
+				i(class="material-icons large") local_atm
 			div.card-stacked
 				div.card-content
-					p I am a very simple card. I am good at containing small bits of information
+					div.card-title Gastos
+					p Controle todos os seus gastos num único local.
 				div.card-action
-					a(href="#!") This is a link
+					a(href="#!" class="btn waves-light waves-effect block") 
+						i.material-icons.left list
+						|Consultar
+					a(href="#!" class="btn blue waves-light waves-effect block") 
+						i.material-icons.left add
+						|Adicionar
+	div.col.s12.m6
+		div.card.horizontal
+			div.card-image
+				i(class="material-icons large") monetization_on
+			div.card-stacked
+				div.card-content
+					div.card-title Orçamentos
+					p Controle todos os seus gastos num único local.
+				div.card-action
+					a(href="#!" class="btn waves-light waves-effect block") 
+						i.material-icons.left list
+						|Consultar
+					a(href="#!" class="btn blue waves-light waves-effect block") 
+						i.material-icons.left add
+						|Adicionar
