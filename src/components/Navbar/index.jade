@@ -11,13 +11,15 @@ nav.white
 
 		div.row
 			include ../Search/index.jade
-			a(href="#" class="brand-logo center black-text") EADCRM
+			a(href="#" data-target="slide-out" class="sidenav-trigger black-text") 
+				i.material-icons menu
+			a(href="#" class="brand-logo center black-text") HR TEK
 
 			ul#nav-mobile(class="right hide-on-med-and-down")
 				li 
-					a(href="#!" class="black-text") HOME
+					a(href="#!" class="black-text hide") HOME
 				li 
-					a(href="#!" class="black-text") PROFILE
+					a(href="#!" class="black-text hide") PROFILE
 				li
 					a(href="#!" class="black-text") 
 						i.material-icons notifications
@@ -27,6 +29,3 @@ nav.white
 				li
 					a(href="#!" class="black-text") 
 						i.material-icons help
-
-
-a(href="#" data-target="slide-out" class="sidenav-trigger") Menu
