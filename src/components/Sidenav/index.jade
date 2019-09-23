@@ -11,24 +11,38 @@ ul#slide-out.sidenav.sidenav-fixed.blue.darken-2
 		a(href="#!" class="white-text") 
 			i(class="material-icons white-text") dashboard
 			|Painel
-	li  
-		a(href="#!" class="white-text") 
-			i(class="material-icons white-text") account_balance
-			|Finanças
+	li.ml-1
+		ul.collapsible.collapsible-accordion
+			li
+				a(href="#!" class="white-text").collapsible-header
+					i(class="material-icons white-text") account_balance
+					|Finanças
+					i(class="material-icons white-text right") arrow_drop_down
+				div.collapsible-body.blue.darken-2
+					ul
+						li 
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") local_atm 
+								|Gastos
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") monetization_on 
+								|Orçamentos
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") account_balance
+								|Bancos
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") attach_money
+								|Caixa
+
+
 
 	li 
 		a(href="#!" class="white-text") 
 			i(class="material-icons white-text") shopping_basket 
 			|Vendas
-
-	li.hide 
-		a(href="#!" class="white-text") 
-			i(class="material-icons white-text") local_atm 
-			|Gastos
-	li.hide
-		a(href="#!" class="white-text") 
-			i(class="material-icons white-text") monetization_on 
-			|Orçamentos
 
 	li 
 		a(href="#!" class="white-text") 

@@ -16,10 +16,21 @@
             <div class="user-view white"><a href="#user"><img src="img/25674388_2028271004121956_996529792_n.jpg" class="circle"/></a><a href="#name"><span class="name">Gabriel Tony</span></a><a href="#email"><span class="email">gabril.tony@gmail.com</span></a></div>
           </li>
           <li> <a href="#!" class="white-text"> <i class="material-icons white-text">dashboard</i>Painel</a></li>
-          <li> <a href="#!" class="white-text"> <i class="material-icons white-text">account_balance</i>Finanças</a></li>
+          <li class="ml-1">
+            <ul class="collapsible collapsible-accordion">
+              <li><a href="#!" class="white-text collapsible-header"><i class="material-icons white-text">account_balance</i>Finanças<i class="material-icons white-text right">arrow_drop_down</i></a>
+                <div class="collapsible-body blue darken-2">
+                  <ul>
+                    <li> <a href="#!" class="white-text"> <i class="material-icons white-text">local_atm </i>Gastos</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">monetization_on </i>Orçamentos</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">account_balance</i>Bancos</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">attach_money</i>Caixa</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li> <a href="#!" class="white-text"> <i class="material-icons white-text">shopping_basket </i>Vendas</a></li>
-          <li class="hide"> <a href="#!" class="white-text"> <i class="material-icons white-text">local_atm </i>Gastos</a></li>
-          <li class="hide"><a href="#!" class="white-text"> <i class="material-icons white-text">monetization_on </i>Orçamentos</a></li>
           <li> <a href="#!" class="white-text"> <i class="material-icons white-text">person </i>Funcionários</a></li>
           <li><a href="#!" class="white-text"> <i class="material-icons white-text">assignment </i>Relatórios</a></li>
           <li class="divider"></li>
@@ -117,6 +128,9 @@
       document.addEventListener('DOMContentLoaded', function() {
       	var elems = document.querySelectorAll('.sidenav');
       	var instances = M.Sidenav.init(elems, function(){});
+      
+      	var elCollapsible = document.querySelectorAll('.collapsible');
+      	var instancesCollapsible = M.Collapsible.init(elCollapsible, function(){});
       });
     </script>
   </body>

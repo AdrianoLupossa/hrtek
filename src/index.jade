@@ -22,6 +22,9 @@ html(lang="en")
 			document.addEventListener('DOMContentLoaded', function() {
 				var elems = document.querySelectorAll('.sidenav');
 				var instances = M.Sidenav.init(elems, function(){});
+
+				var elCollapsible = document.querySelectorAll('.collapsible');
+				var instancesCollapsible = M.Collapsible.init(elCollapsible, function(){});
 			});
 			
 			
