@@ -39,10 +39,35 @@ ul#slide-out.sidenav.sidenav-fixed.blue.darken-2
 
 
 
-	li 
-		a(href="#!" class="white-text") 
-			i(class="material-icons white-text") shopping_basket 
-			|Vendas
+	li.ml-1
+		ul.collapsible.collapsible-accordion
+			li
+				a(href="#!" class="white-text").collapsible-header
+					i(class="material-icons white-text") shopping_basket
+					|Vendas
+					i(class="material-icons white-text right") arrow_drop_down
+				div.collapsible-body.blue.darken-2
+					ul
+						li 
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") people 
+								|Clientes
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") assignment 
+								|Facturas
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") local_mall
+								|Produtos
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") business
+								|Serviços
+						li
+							a(href="#!" class="white-text") 
+								i(class="material-icons white-text") attach_money
+								|Recebimentos
 
 	li 
 		a(href="#!" class="white-text") 

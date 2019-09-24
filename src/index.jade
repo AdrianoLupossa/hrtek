@@ -14,17 +14,10 @@ html(lang="en")
 				include components/Sidenav/index
 				include components/Navbar/index
 			main.main
-				include views/Financas/index
+				include views/Customer/index
 				
 			footer
 		<script src="./js/materialize.min.js"></script>
-		script.
-			document.addEventListener('DOMContentLoaded', function() {
-				var elems = document.querySelectorAll('.sidenav');
-				var instances = M.Sidenav.init(elems, function(){});
-
-				var elCollapsible = document.querySelectorAll('.collapsible');
-				var instancesCollapsible = M.Collapsible.init(elCollapsible, function(){});
-			});
+		script  M.AutoInit();
 			
 			

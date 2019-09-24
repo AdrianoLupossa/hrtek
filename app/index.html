@@ -30,7 +30,21 @@
               </li>
             </ul>
           </li>
-          <li> <a href="#!" class="white-text"> <i class="material-icons white-text">shopping_basket </i>Vendas</a></li>
+          <li class="ml-1">
+            <ul class="collapsible collapsible-accordion">
+              <li><a href="#!" class="white-text collapsible-header"><i class="material-icons white-text">shopping_basket</i>Vendas<i class="material-icons white-text right">arrow_drop_down</i></a>
+                <div class="collapsible-body blue darken-2">
+                  <ul>
+                    <li> <a href="#!" class="white-text"> <i class="material-icons white-text">people </i>Clientes</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">assignment </i>Facturas</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">local_mall</i>Produtos</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">business</i>Serviços</a></li>
+                    <li><a href="#!" class="white-text"> <i class="material-icons white-text">attach_money</i>Recebimentos</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li> <a href="#!" class="white-text"> <i class="material-icons white-text">person </i>Funcionários</a></li>
           <li><a href="#!" class="white-text"> <i class="material-icons white-text">assignment </i>Relatórios</a></li>
           <li class="divider"></li>
@@ -66,72 +80,75 @@
       <main class="main">
         <section>
           <div class="row">
-            <h2 class="header">Finanças</h2>
-            <div class="col s12 m6">
-              <div class="card horizontal">
-                <div class="card-image"><i class="material-icons large">credit_card</i></div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="card-title">Gastos</div>
-                    <p>Controle todos os seus gastos num único local.</p>
-                  </div>
-                  <div class="card-action"><a href="#!" class="btn waves-light waves-effect block"> <i class="material-icons left">list</i>Consultar</a><a href="#!" class="btn blue waves-light waves-effect block"> <i class="material-icons left">add</i>Adicionar</a></div>
-                </div>
+            <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 1rem;" class="header">Clientes</h2>
+            <div class="header mb-3">
+              <div class="button-dropdown right mr-1"><a href="#" data-target="dropdown1" class="dropdown-trigger btn grey darken-1">
+                   
+                  Ordernar por<i class="material-icons right">arrow_drop_down</i></a>
+                <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="#!" class="black-text">Ordem descrescente</a></li>
+                  <li><a href="#!" class="black-text">Número de identificação</a></li>
+                  <li tabindex="-1" class="divider"></li>
+                  <li><a href="#!" class="black-text">Outro</a></li>
+                </ul>
               </div>
+              <button class="btn primary secondary waves-effect blue ml-1">Novo cliente</button>
             </div>
-            <div class="col s12 m6">
-              <div class="card horizontal">
-                <div class="card-image"><i class="material-icons large">monetization_on</i></div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="card-title">Orçamentos</div>
-                    <p>Controle todos os seus gastos num único local.</p>
-                  </div>
-                  <div class="card-action"><a href="#!" class="btn waves-light waves-effect block"> <i class="material-icons left">list</i>Consultar</a><a href="#!" class="btn blue waves-light waves-effect block"> <i class="material-icons left">add</i>Adicionar</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mt-2">
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card horizontal">
-                <div class="card-image"><i class="material-icons large">account_balance</i></div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="card-title">Bancos</div>
-                    <p>Controle todos os seus gastos num único local.</p>
-                  </div>
-                  <div class="card-action"><a href="#!" class="btn waves-light waves-effect block"> <i class="material-icons left">list</i>Consultar</a><a href="#!" class="btn blue waves-light waves-effect block"> <i class="material-icons left">add</i>Adicionar</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card horizontal">
-                <div class="card-image"><i class="material-icons large">attach_money</i></div>
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <div class="card-title">Caixa</div>
-                    <p>Controle todos os seus gastos num único local.</p>
-                  </div>
-                  <div class="card-action"><a href="#!" class="btn waves-light waves-effect block"> <i class="material-icons left">list</i>Consultar</a><a href="#!" class="btn blue waves-light waves-effect block"> <i class="material-icons left">add</i>Adicionar</a></div>
-                </div>
-              </div>
-            </div>
+            <table class="responsive-table highlight customer">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Foto</th>
+                  <th>Nome</th>
+                  <th>Designação</th>
+                  <th>Email</th>
+                  <th>Endereço</th>
+                  <th>Telefone</th>
+                  <th>Salário</th>
+                  <th>Acções</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cursor-pointer">
+                  <td>1</td>
+                  <td> <img src="./img/avatar-man.png" width="64" class="circle"/></td>
+                  <td>Alvin</td>
+                  <td>Social Media especialist</td>
+                  <td>alvin@gesprin.co.ao</td>
+                  <td>Viana</td>
+                  <td>933 093 890</td>
+                  <td>200 mil</td>
+                  <td> <i data-tooltip="Ver perfil" class="material-icons cursor-pointer mr-1 tooltipped">remove_red_eye</i><i data-tooltip="Editar os dados" class="material-icons cursor-pointer mr-1 tooltipped">edit</i><i data-tooltip="Eliminar" class="material-icons cursor-pointer mr-1 tooltipped">delete</i></td>
+                </tr>
+                <tr class="cursor-pointer">
+                  <td>1</td>
+                  <td> <img src="./img/yuna.jpg" width="64" class="circle"/></td>
+                  <td>Sharon</td>
+                  <td>Product Manager</td>
+                  <td>sharon@gesprin.co.ao</td>
+                  <td>Viana</td>
+                  <td>932 093 890</td>
+                  <td>150 mil</td>
+                  <td> <i data-tooltip="Ver perfil" class="material-icons cursor-pointer mr-1 tooltipped">remove_red_eye</i><i data-tooltip="Editar os dados" class="material-icons cursor-pointer mr-1 tooltipped">edit</i><i data-tooltip="Eliminar" class="material-icons cursor-pointer mr-1 tooltipped">delete</i></td>
+                </tr>
+                <tr class="cursor-pointer">
+                  <td>1</td>
+                  <td> <img src="./img/avatar-man.png" width="64" class="circle"/></td>
+                  <td>Kelvin</td>
+                  <td>CTO</td>
+                  <td>kelvin@gesprin.co.ao</td>
+                  <td>Palanca, Golf 2</td>
+                  <td>993 093 890</td>
+                  <td>200 mil</td>
+                  <td> <i data-tooltip="Ver perfil" class="material-icons cursor-pointer mr-1 tooltipped">remove_red_eye</i><i data-tooltip="Editar os dados" class="material-icons cursor-pointer mr-1 tooltipped">edit</i><i data-tooltip="Eliminar" class="material-icons cursor-pointer mr-1 tooltipped">delete</i></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </main>
       <footer></footer>
     </div><script src="./js/materialize.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      	var elems = document.querySelectorAll('.sidenav');
-      	var instances = M.Sidenav.init(elems, function(){});
-      
-      	var elCollapsible = document.querySelectorAll('.collapsible');
-      	var instancesCollapsible = M.Collapsible.init(elCollapsible, function(){});
-      });
-    </script>
+    <script> M.AutoInit();</script>
   </body>
 </html>

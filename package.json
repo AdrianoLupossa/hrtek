@@ -1,11 +1,13 @@
 {
-  "name": "HR TEK",
+  "name": "HRTEK",
   "version": "1.0.0",
   "description": "An ERP system",
   "scripts": {
     "initial-files": "mkdir app src && cd app && mkdir css js && cd .. && cd src && mkdir components && touch app.styl index.jade index.js",
     "compile:stylus": "stylus src/app.styl -c -w -o app/css/app.min.css",
     "compile:jade": "jade src/index.jade -P -w -o app/ ",
+    "compile:finance": "jade src/views/Financas/index.jade -P -o components/Financas/ && stylus src/components/Cards/* -o components/Financas/finance.css",
+    "compile:customer": "jade src/views/Customer/index.jade -P -o components/Customer/ && stylus src/components/Table/* -o components/Customer/customer.css",
     "build": ""
   },
   "directories": {

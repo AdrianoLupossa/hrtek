@@ -1,0 +1,73 @@
+section
+	div.row
+		h2(style="border-bottom: 1px solid #ccc; padding-bottom: 1rem;").header Clientes
+		div.header.mb-3
+			div.button-dropdown.right.mr-1
+				a(class='dropdown-trigger btn grey darken-1' href='#' data-target='dropdown1') 
+					|Ordernar por
+					i(class="material-icons right") arrow_drop_down
+				ul(id='dropdown1' class='dropdown-content')
+					li
+						a(href="#!" class="black-text") Ordem descrescente
+					li
+						a(href="#!" class="black-text") Número de identificação
+					li(class="divider" tabindex="-1")
+					li
+						a(href="#!" class="black-text") Outro
+			button.btn.primary.secondary.waves-effect.blue.ml-1 Novo cliente
+			
+		table.responsive-table.highlight.customer
+			thead
+				tr
+					th #
+					th Foto
+					th Nome
+					th Designação
+					th Email
+					th Endereço
+					th Telefone
+					th Salário
+					th Acções
+			tbody
+				tr.cursor-pointer
+					td 1
+					td 
+						img(src="./img/avatar-man.png" width="64" class="circle")
+					td Alvin
+					td Social Media especialist
+					td alvin@gesprin.co.ao
+					td Viana
+					td 933 093 890
+					td 200 mil
+					td 
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Ver perfil") remove_red_eye
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Editar os dados") edit
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Eliminar") delete
+				tr.cursor-pointer
+					td 1
+					td 
+						img(src="./img/yuna.jpg" width="64" class="circle")
+					td Sharon
+					td Product Manager
+					td sharon@gesprin.co.ao
+					td Viana
+					td 932 093 890
+					td 150 mil
+					td 
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Ver perfil") remove_red_eye
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Editar os dados") edit
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Eliminar") delete
+				tr.cursor-pointer
+					td 1
+					td 
+						img(src="./img/avatar-man.png" width="64" class="circle")
+					td Kelvin
+					td CTO
+					td kelvin@gesprin.co.ao
+					td Palanca, Golf 2
+					td 993 093 890
+					td 200 mil
+					td 
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Ver perfil") remove_red_eye
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Editar os dados") edit
+						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Eliminar") delete
