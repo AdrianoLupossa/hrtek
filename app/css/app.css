@@ -76,6 +76,9 @@ main h2.header {
   .avatar-area .avatar {
     margin: auto;
   }
+  .action {
+    text-align: center;
+  }
 }
 .avatar {
   width: 200px;
