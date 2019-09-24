@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>HR TEK</title>
-    <link rel="stylesheet" href="./css/app.min.css"/>
+    <link rel="stylesheet" href="./css/app.css"/>
     <link rel="stylesheet" href="./css/materialize.min.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
@@ -79,71 +79,53 @@
       </header>
       <main class="main">
         <section>
+          <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 1rem;" class="header">Clientes</h2>
+          <input type="file" class="hide"/>
+          <div class="avatar-area my-3 center-text">
+            <div class="avatar circle"><i class="material-icons large">camera</i></div><span class="ml-1">Foto do cliente</span>
+          </div>
           <div class="row">
-            <h2 style="border-bottom: 1px solid #ccc; padding-bottom: 1rem;" class="header">Clientes</h2>
-            <div class="header mb-3">
-              <div class="button-dropdown right mr-1"><a href="#" data-target="dropdown1" class="dropdown-trigger btn grey darken-1">
-                   
-                  Ordernar por<i class="material-icons right">arrow_drop_down</i></a>
-                <ul id="dropdown1" class="dropdown-content">
-                  <li><a href="#!" class="black-text">Ordem descrescente</a></li>
-                  <li><a href="#!" class="black-text">Número de identificação</a></li>
-                  <li tabindex="-1" class="divider"></li>
-                  <li><a href="#!" class="black-text">Outro</a></li>
-                </ul>
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" placeholder="Placeholder" type="text" class="validate"/>
+                  <label for="first_name">Nome</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate"/>
+                  <label for="last_name">Sobrenome</label>
+                </div>
               </div>
-              <button class="btn primary secondary waves-effect blue ml-1">Novo cliente</button>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="disabled" disabled="" value="Campo desabilitado..." type="text" class="validate"/>
+                  <label for="disabled">Desabilitado</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="telefone" type="tel" class="validate"/>
+                  <label for="telefone">Telefone</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate"/>
+                  <label for="email">E-mail</label><span data-error="Email inválido" data-success="right" class="helper-text"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="password" type="password" class="validate"/>
+                  <label for="password">Senha</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="confirmPassword" type="password" class="validate"/>
+                  <label for="confirmPassword">Confirmar senha</label>
+                </div>
+              </div>
+            </form>
+            <div class="action">
+              <button class="btn primary waves-effect">Salvar</button><span class="ml-2">ou</span><a href="#!" class="ml-2">Cancelar</a>
             </div>
-            <table class="responsive-table highlight customer">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Foto</th>
-                  <th>Nome</th>
-                  <th>Designação</th>
-                  <th>Email</th>
-                  <th>Endereço</th>
-                  <th>Telefone</th>
-                  <th>Salário</th>
-                  <th>Acções</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="cursor-pointer">
-                  <td>1</td>
-                  <td> <img src="./img/avatar-man.png" width="64" class="circle"/></td>
-                  <td>Alvin</td>
-                  <td>Social Media especialist</td>
-                  <td>alvin@gesprin.co.ao</td>
-                  <td>Viana</td>
-                  <td>933 093 890</td>
-                  <td>200 mil</td>
-                  <td> <i data-tooltip="Ver perfil" class="material-icons cursor-pointer mr-1 tooltipped">remove_red_eye</i><i data-tooltip="Editar os dados" class="material-icons cursor-pointer mr-1 tooltipped">edit</i><i data-tooltip="Eliminar" class="material-icons cursor-pointer mr-1 tooltipped">delete</i></td>
-                </tr>
-                <tr class="cursor-pointer">
-                  <td>1</td>
-                  <td> <img src="./img/yuna.jpg" width="64" class="circle"/></td>
-                  <td>Sharon</td>
-                  <td>Product Manager</td>
-                  <td>sharon@gesprin.co.ao</td>
-                  <td>Viana</td>
-                  <td>932 093 890</td>
-                  <td>150 mil</td>
-                  <td> <i data-tooltip="Ver perfil" class="material-icons cursor-pointer mr-1 tooltipped">remove_red_eye</i><i data-tooltip="Editar os dados" class="material-icons cursor-pointer mr-1 tooltipped">edit</i><i data-tooltip="Eliminar" class="material-icons cursor-pointer mr-1 tooltipped">delete</i></td>
-                </tr>
-                <tr class="cursor-pointer">
-                  <td>1</td>
-                  <td> <img src="./img/avatar-man.png" width="64" class="circle"/></td>
-                  <td>Kelvin</td>
-                  <td>CTO</td>
-                  <td>kelvin@gesprin.co.ao</td>
-                  <td>Palanca, Golf 2</td>
-                  <td>993 093 890</td>
-                  <td>200 mil</td>
-                  <td> <i data-tooltip="Ver perfil" class="material-icons cursor-pointer mr-1 tooltipped">remove_red_eye</i><i data-tooltip="Editar os dados" class="material-icons cursor-pointer mr-1 tooltipped">edit</i><i data-tooltip="Eliminar" class="material-icons cursor-pointer mr-1 tooltipped">delete</i></td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </section>
       </main>

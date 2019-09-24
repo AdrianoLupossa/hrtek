@@ -1,0 +1,42 @@
+section
+	h2(style="border-bottom: 1px solid #ccc; padding-bottom: 1rem;").header Clientes
+	input(type="file" class="hide")
+	div.avatar-area.my-3.center-text
+		div.avatar.circle
+			i(class="material-icons large") camera
+		span(class="ml-1") Foto do cliente
+
+	.row
+		form.col.s12
+			.row
+				.input-field.col.s6
+					input#first_name.validate(placeholder='Placeholder', type='text')
+					label(for='first_name') Nome
+				.input-field.col.s6
+					input#last_name.validate(type='text')
+					label(for='last_name') Sobrenome
+			.row
+				.input-field.col.s12
+					input#disabled.validate(disabled='', value='Campo desabilitado...', type='text')
+					label(for='disabled') Desabilitado
+			.row
+				.input-field.col.s6
+					input#telefone.validate(type='tel')
+					label(for='telefone') Telefone
+				.input-field.col.s6
+					input#email.validate(type='email')
+					label(for='email') E-mail
+					span(class="helper-text" data-error="Email inválido" data-success="right")
+			.row
+				.input-field.col.s6
+					input#password.validate(type='password')
+					label(for='password') Senha
+				.input-field.col.s6
+					input#confirmPassword.validate(type='password')
+					label(for='confirmPassword') Confirmar senha
+			
+
+		div.action
+			button(class="btn primary waves-effect") Salvar
+			span.ml-2 ou
+			a(href="#!" class="ml-2") Cancelar

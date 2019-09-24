@@ -4,10 +4,14 @@
   "description": "An ERP system",
   "scripts": {
     "initial-files": "mkdir app src && cd app && mkdir css js && cd .. && cd src && mkdir components && touch app.styl index.jade index.js",
-    "compile:stylus": "stylus src/app.styl -c -w -o app/css/app.min.css",
+    "compile:stylus": "stylus src/app.styl -o app/css/app.css",
+    "compile:stylus:watch": "stylus src/app.styl -w -o app/css/app.css",
     "compile:jade": "jade src/index.jade -P -w -o app/ ",
-    "compile:finance": "jade src/views/Financas/index.jade -P -o components/Financas/ && stylus src/components/Cards/* -o components/Financas/finance.css",
-    "compile:customer": "jade src/views/Customer/index.jade -P -o components/Customer/ && stylus src/components/Table/* -o components/Customer/customer.css",
+    "compile:finance": "npm run compile:stylus && jade src/views/Financas/index.jade -P -o components/Financas/ && stylus src/components/Cards/* -o components/Financas/finance.css",
+    "compile:customer": "npm run compile:stylus && jade src/views/Customer/index.jade -P -o components/Customer/ && stylus src/components/Table/* -o components/Customer/customer.css",
+    "compile:form": "npm run compile:stylus && jade src/components/Forms/index.jade -P -o components/Forms/",
+    "compile:DataNotFound": "npm run compile:stylus && jade src/views/DataNotFound.jade -P -o components/",
+    "compile:all": "npm run compile:stylus && npm run compile:finance && npm run compile:customer && npm run compile:form && npm run compile:DataNotFound",
     "build": ""
   },
   "directories": {

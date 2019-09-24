@@ -4,9 +4,10 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		title HR TEK
-		link(rel="stylesheet", href="./css/app.min.css")
+		link(rel="stylesheet", href="./css/app.css")
 		link(rel="stylesheet", href="./css/materialize.min.css")
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+
 
 	body
 		div.root
@@ -14,7 +15,7 @@ html(lang="en")
 				include components/Sidenav/index
 				include components/Navbar/index
 			main.main
-				include views/Customer/index
+				include components/Forms/index
 				
 			footer
 		<script src="./js/materialize.min.js"></script>

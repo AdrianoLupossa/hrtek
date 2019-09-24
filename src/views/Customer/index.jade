@@ -1,5 +1,5 @@
 section
-	div.row
+	div.rows
 		h2(style="border-bottom: 1px solid #ccc; padding-bottom: 1rem;").header Clientes
 		div.header.mb-3
 			div.button-dropdown.right.mr-1
@@ -15,7 +15,7 @@ section
 					li
 						a(href="#!" class="black-text") Outro
 			button.btn.primary.secondary.waves-effect.blue.ml-1 Novo cliente
-			
+			//- include ../DataNotFound.jade
 		table.responsive-table.highlight.customer
 			thead
 				tr
@@ -44,7 +44,7 @@ section
 						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Editar os dados") edit
 						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Eliminar") delete
 				tr.cursor-pointer
-					td 1
+					td 2
 					td 
 						img(src="./img/yuna.jpg" width="64" class="circle")
 					td Sharon
@@ -58,7 +58,7 @@ section
 						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Editar os dados") edit
 						i(class="material-icons cursor-pointer mr-1 tooltipped" data-tooltip="Eliminar") delete
 				tr.cursor-pointer
-					td 1
+					td 3
 					td 
 						img(src="./img/avatar-man.png" width="64" class="circle")
 					td Kelvin
